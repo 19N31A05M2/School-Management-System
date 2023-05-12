@@ -1,0 +1,243 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: "Roboto", sans-serif;
+}
+a{
+	text-decoration: none;
+	font-weight:bold;
+}
+body{
+	background:url(../images/loginbackground.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+/*navbar style*/
+.navbar{
+	background: #74ded8;
+	height: 60px;
+	display: flex;
+	margin-left:200px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+}
+
+.navbar .logo a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 2px;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.navbar .nav_right > ul{
+	display: flex;
+	align-items: center;
+}
+
+.navbar .nav_right ul li.nr_li{
+	margin-left: 25px;
+	cursor: pointer;
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+}
+
+.navbar .nav_right ul li.nr_li:hover {
+    color: #cefffc;
+}
+
+.navbar .nav_right ul li img{
+	width: 35px;
+	vertical-align: middle;
+}
+
+.navbar .dd_menu {
+    position: absolute;
+    right: -25px;
+    top: 47px;
+    display: flex;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.25);
+    display: none;
+}
+
+.navbar .dd_menu .dd_left{
+	background: #74ded8;
+	padding: 15px 20px;
+	width:200px;
+	border-radius: 15px;
+}
+
+.navbar .dd_menu .dd_left li{
+	color: #fff;
+	text-align:center;
+}
+.nr_li a{
+	color: #fff;
+	text-decoration:none;
+}
+
+.img {
+  border-radius: 50%;
+  height:35px;
+}
+.img1 {
+  border-radius: 50%;
+  height:50px;
+  width:90px;
+  align-items:center;
+  
+}
+
+.navbar .dd_menu li{
+	margin-bottom: 10px;
+	color: #868686;
+}
+
+.navbar .dd_menu:before{
+	content: "";
+	position: absolute;
+	top: -20px;
+	right: 30px;
+	border: 10px solid;
+	border-color: transparent transparent #fff transparent;
+}
+
+.navbar .dd_main.active .dd_menu{
+	display: flex;
+}
+/*end if navbar*/
+/*sidebar style*/
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #4b4276;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #594f8d;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  background: #594f8d;
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 5px;
+  color: #bdb8d7;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+@media (max-height: 500px){
+  .social_media{
+    display: none !important;
+  }
+}
+.sidebar h2{
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.sidebar span{
+  color: #19B3D3;
+}
+/*end of sidebar style*/
+/*main content style*/
+.wrapper .main_content{
+	width:100%;
+	margin-left:0px;
+	min-height:100%;
+	background:url(../images/loginbackground.jpg);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+.first{
+	min-height:91vh;
+	width:100%;
+	padding-left:200px;
+	
+}
+.main_content{
+	 font-family: "Roboto", sans-serif;
+}
+.but{
+	border-radius:4px;
+	color:white;
+	text-shadow:0 1px 1px rbga(0. 0. 0. 0.2);
+	background:rgb(28,184,65);
+	
+}
+.but:hover{
+	cursor:pointer;
+	background:lightgreen;
+}
+.first h3{
+	text-align:center;
+	text-decoration:underline;
+	color:darkslateblue;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.first table{
+	border:2px solid black;
+	border-collapse:collapse;
+	width:95%;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+.first td{
+	border:1px solid black;
+	border-collapse:collapse;
+	padding:5px;
+}
